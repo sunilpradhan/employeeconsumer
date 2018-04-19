@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.javainuse.model.Employee;
 
+
+
 @FeignClient("employee-zuul-service")
 public interface RemoteCallService {
 
