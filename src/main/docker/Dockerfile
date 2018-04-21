@@ -11,8 +11,8 @@ VOLUME /tmp
 # Add the application's jar to the container
 ADD employeeconsumerservice-0.0.1-SNAPSHOT.jar employeeconsumerservice.jar
 
-#RUN bash -c 'touch /employeeconsumerservice.jar'
+RUN bash -c 'touch /employeeconsumerservice.jar'
 # Run the jar file 
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/employeeconsumerservice.jar"]
 
-EXPOSE 8091
+EXPOSE 8080
